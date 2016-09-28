@@ -1,0 +1,18 @@
+This project is a game that times how long it takes the user to click away all of the 'good' objects,
+ while avoiding the 'bad' ones. 
+SpawnedObject is an abstract class extended by GoodObject and BadObject. 
+GoodObject and BadObject implement SpawnedObject's abstract method gameOver, which stops the game and displays
+a different message based on which object called it.
+In addition to the abstract superclass, the interface Switchable is used to implement a scene changer.
+The ArrayLists goodObjects and badObjects are created in the GameController. These are my collection classes.
+The method startGame in the GameController class creates new Objects at semi-random and loads the two ArrayLists.
+I use exception handling in the uploadBackground method of the GameController class. There, a try/catch is used to assure
+that a photo is successfully selected and applied to the game's background by the user.
+The Model 'M' in MVC consists of the classes SpawnedObject, GoodObject, BadObject, and SceneManager.
+There are two scenes used in this project: game.fxml and about.fxml. They can be switched between each other with the 
+'About' and 'Back' buttons.
+As noted above, the about.fxml scene presents instructions on how to play the game and includes information about the project.
+My application loads data with the 'Load Background' button. on the game.fxml scene. The GameController has a method
+called uploadBackground() that allows the user to select an image from their computer and make it the background
+of the game pane.
+

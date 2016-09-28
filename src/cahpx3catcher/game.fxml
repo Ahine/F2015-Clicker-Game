@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cahpx3catcher.GameController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="350.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="600.0" />
+      <ImageView fx:id="background" fitHeight="350.0" fitWidth="600.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" AnchorPane.bottomAnchor="113.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <VBox layoutX="2.0" layoutY="351.0" prefHeight="111.0" prefWidth="273.0">
+         <children>
+            <HBox prefHeight="58.0" prefWidth="273.0">
+               <children>
+                  <Label text="Time: ">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timeLabel" text="0">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="47.0" prefWidth="600.0">
+               <children>
+                  <Label text="Score: ">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="scoreLabel" text="0">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="153.0" layoutY="352.0" prefHeight="111.0" prefWidth="447.0">
+         <children>
+            <Button fx:id="playBtn" mnemonicParsing="false" onAction="#startGame" text="Play">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="resetBtn" mnemonicParsing="false" onAction="#resetAll" text="Reset">
+               <HBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="aboutBtn" mnemonicParsing="false" onAction="#showAbout" text="About" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#uploadBackground" prefHeight="50.0" prefWidth="100.0" text="Upload Background" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="gamePane" prefHeight="350.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cahpx3catcher.AboutController">
+   <children>
+      <Label layoutX="174.0" layoutY="24.0" text="How to Play: ">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="84.0" prefHeight="273.0" prefWidth="327.0" text="Press 'Play' to spawn your &#10;map, and start the timer. &#10;Click all of the green objects &#10;off your screen, without letting&#10; your mouse touch the red ones. &#10;Your time will affect how many &#10;points you get!" textAlignment="CENTER">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="357.0" mnemonicParsing="false" onAction="#goHome" text="Back" />
+   </children>
+</AnchorPane>

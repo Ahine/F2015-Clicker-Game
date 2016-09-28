@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Cahpx3Catcher.jnlp">
+  <information>
+    <title>Cahpx3Catcher</title>
+    <vendor>Andy</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Cahpx3Catcher.jar" size="13236" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Cahpx3Catcher" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="cahpx3catcher.Cahpx3Catcher"  name="Cahpx3Catcher" />
+  <update check="always"/>
+</jnlp>
